@@ -1,0 +1,33 @@
+{
+  "name": "Webool",
+  "homepage": "https://github.com/sidneyroberto/Webool",
+  "description": "Webool: Um portal web para apoio ao ensino de deficientes intelectuais",
+  "main": "",
+  "keywords": [
+    "webool",
+    "deficiência",
+    "intelectual",
+    "material",
+    "didático"
+  ],
+  "authors": [
+    "Jéssica Oliveira da Gama",
+    "Vitória Pereira Rocha e Sidney Roberto de Sousa"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.3",
+    "angular-route": "^1.7.3",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
+  }
+}

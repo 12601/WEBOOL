@@ -1,0 +1,37 @@
+{
+  "name": "webool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-usemin": "^0.3.29",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-uglify": "^3.0.1",
+    "gulp-rev": "^8.1.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.4.0",
+    "grunt-ng-annotate": "^3.0.0",
+    "grunt-usemin": "^3.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidneyroberto/Webool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidneyroberto/Webool/issues"
+  },
+  "homepage": "https://github.com/sidneyroberto/Webool#readme"
+}

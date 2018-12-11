@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+body {
+    background-color: #ECECEC;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.barraNavegacao {
+    background-color: #81CFE0;
+    font-size: 120%;
+}
+
+.barraNavegacao a {
+    color: white !important;
+}
+
+.itemMenu {
+    display: block;
+}
+
+.itemMenu img {
+    width: 200px;
+}
+
+.logo {
+    width: 100px;
+}
+
+#collapsibleNavbar {
+    text-align: right;
+}
+
+.breadcrumbWebool {
+    background-color: #ECECEC;
+}
+
+.breadcrumbWebool li a {
+    color: #67809F !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.letra {
+    width: 80px;
+    height: 80px;
+    text-align: center
+}
+
+.grupoLetras {
+    display: inline;
+}
+
+.figuraSoletrando {
+    width: 300px;
+}
+
+.imagemContato {
+    width: 500px;
+}
+
+.areaRA{
+    width: 90%; /*80% largura*/
+    height: 600px; /*400px altura*/
+}
+
+@media only screen and(max-width: 768px) {
+    .letra .grupoLetra {
+        display: block;
+    }
+    .figuraSoletrando {
+        width: 200px;
+    }
+}
