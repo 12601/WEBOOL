@@ -1,10 +1,11 @@
 var app = angular.module('webool');
 app.controller('LetraAController', function ($scope) {
-    $scope.imagemLetra = 'aa.png';
+    $scope.imagemLetra = 'aa';
     $scope.imagemPalavra = 'arvore.png';
     $scope.palavra = 'ÁRVORE';
     $scope.letras = [];
-    $scope.titulo = 'Letra A'
+    $scope.titulo = 'Letra A';
+
     $scope.indices = Array.from(Array($scope.palavra.length).keys()); // [0, 1, 2, 3, 4, 5]
     // for i in [0, 1, 2, 3, 4, 5]
 

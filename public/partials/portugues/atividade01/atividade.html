@@ -16,12 +16,20 @@
 <div class="fundo">
     <div class="row">
         <div class="col-sm-8 text-center">
-            <img src="img/portugues/{{ imagemLetra }}" title="Aa">
+            <img src="img/portugues/{{ imagemLetra }}.png" title="aa">
             <h1> {{ palavra }} </h1>
             <br>
             <div class="grupoLetras" ng-repeat="n in indices">
                 <input class="letra" type="text" style="font-family: Tahoma; font-size: 30px" ng-model="letras[n]" id="letra{{ n + 1}}" ng-keyup="verificarLetra(n + 1)">
             </div>
+
+            <audio preload>
+                <source src="audio/portugues/{{ imagemLetra }}.mp3" type="audio/mpeg">
+            </audio>
+            <br><br><br>
+            <audio controls>
+                <source src="audio/portugues/{{ palavra }}.mp3" type="audio/mpeg">
+            </audio>
         </div>
 
         <div class="col-sm-4 text-center">

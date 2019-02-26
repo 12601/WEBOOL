@@ -1,11 +1,12 @@
 var app = angular.module('webool');
 app.controller('LetraCController', function ($scope, $route) {
 
-    $scope.imagemLetra = 'cc.png';
+    $scope.imagemLetra = 'cc';
     $scope.imagemPalavra = 'coelho.png';
     $scope.palavra = 'COELHO';
     $scope.letras = [];
     $scope.titulo = 'Letra C';
+
     $scope.indices = Array.from(Array($scope.palavra.length).keys());
 
     $scope.verificarLetra = function (letra) {
