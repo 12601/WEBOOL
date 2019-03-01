@@ -48,8 +48,10 @@ app.config(function ($routeProvider) {
         templateUrl: 'partials/historia/atividade01/india.html'
     });
 
+    
     // Português
 
+    
     $routeProvider.when('/portugues/atividade01', {
         templateUrl: 'partials/portugues/atividade01/inicio.html'
     });
@@ -183,6 +185,7 @@ app.config(function ($routeProvider) {
         controller: 'LetraZController'
     });
 
+
     // Matemática
     
     $routeProvider.when('/matematica', {
@@ -196,6 +199,141 @@ app.config(function ($routeProvider) {
     $routeProvider.when('/matematica/atividade01/:forma', {
         templateUrl: 'partials/matematica/atividade01/atividade.html',
         controller: 'FormaGeometricaController'
+    });
+
+    // Português 2
+
+    $routeProvider.when('/portugues/atividade02', {
+        templateUrl: 'partials/portugues/atividade02/inicio.html'
+    });
+
+    $routeProvider.when('/portugues/atividade02/a', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraAController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/b', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraBController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/c', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraCController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/d', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraDController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/e', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraEController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/f', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraFController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/g', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraGController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/h', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraHController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/i', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraIController'
+    });
+    $routeProvider.when('/portugues/atividade02/j', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraJController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/k', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraKController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/l', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraLController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/m', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraMController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/n', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraNController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/o', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraOController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/p', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraPController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/q', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraQController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/r', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraRController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/s', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraSController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/t', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraTController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/u', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraUController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/v', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraVController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/w', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraWController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/x', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraXController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/y', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraYController'
+    });
+
+    $routeProvider.when('/portugues/atividade02/z', {
+        templateUrl: 'partials/portugues/atividade02/atividade.html',
+        controller: 'LetraZController'
     });
 
 });
