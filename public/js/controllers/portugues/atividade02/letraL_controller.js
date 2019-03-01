@@ -1,7 +1,7 @@
 var app = angular.module('webool');
 app.controller('LetraLController', function ($scope) {
 
-    $scope.imagemLetra = 'll.png';
+    $scope.imagemLetra = 'l';
     $scope.imagemPalavra = 'livros.png';
     $scope.palavra = 'LIVROS';
     $scope.letras = [];

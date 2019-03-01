@@ -1,6 +1,6 @@
 var app = angular.module('webool');
 app.controller('LetraAController', function ($scope) {
-    $scope.imagemLetra = 'aa';
+    $scope.imagemLetra = 'a';
     $scope.imagemPalavra = 'arvore.png';
     $scope.palavra = 'ÁRVORE';
     $scope.letras = [];
@@ -44,7 +44,7 @@ app.controller('LetraAController', function ($scope) {
             if ($scope.letras[5] != 'e' && $scope.letras[5] != 'E') {
                 $scope.letras[5] = '';
             } else {
-                location.href = "#!/portugues/atividade02/b";
+                $('.btn').button();
             }
         }
     };
