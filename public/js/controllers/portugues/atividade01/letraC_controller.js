@@ -2,7 +2,7 @@ var app = angular.module('webool');
 app.controller('LetraCController', function ($scope, $route) {
 
     $scope.imagemLetra = 'cc';
-    $scope.imagemPalavra = 'coelho.png';
+    $scope.imagemPalavra = 'coelho';
     $scope.palavra = 'COELHO';
     $scope.letras = [];
     $scope.titulo = 'Letra C';
@@ -43,12 +43,13 @@ app.controller('LetraCController', function ($scope, $route) {
         } else if (letra === 6) {
             if ($scope.letras[5] != 'O' && $scope.letras[5] != 'o') {
                 $scope.letras[5] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/d";
             }
         }
     };
 
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/d";
+    };
     // Garante o foco na primeira letra
     angular.element(document).ready(function () {
         document.getElementById('letra1').focus();

@@ -1,7 +1,7 @@
 var app = angular.module('webool');
 app.controller('LetraSController', function ($scope) {
-    $scope.imagemLetra = 'ss.png';
-    $scope.imagemPalavra = 'sorvete.png';
+    $scope.imagemLetra = 'ss';
+    $scope.imagemPalavra = 'sorvete';
     $scope.palavra = 'SORVETE';
     $scope.letras = [];
     $scope.titulo = 'Letra S';
@@ -47,10 +47,12 @@ app.controller('LetraSController', function ($scope) {
         } else if (letra === 7) {
             if ($scope.letras[6] != 'e' && $scope.letras[6] != 'E') {
                 $scope.letras[6] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/t";
             }
         }
+    };
+
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/t";
     };
 
     // Garante o foco na primeira letra

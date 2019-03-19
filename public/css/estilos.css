@@ -40,8 +40,8 @@ body {
 }
 
 .letra {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     text-align: center
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .figuraSoletrando {
-    width: 300px;
+    height:300px;
 }
 
 .imagemContato {
@@ -60,6 +60,10 @@ body {
 .areaRA{
     width: 90%; /*80% largura*/
     height: 600px; /*400px altura*/
+}
+
+.imagemLetra{
+    width: 150px;
 }
 
 @media only screen and(max-width: 768px) {

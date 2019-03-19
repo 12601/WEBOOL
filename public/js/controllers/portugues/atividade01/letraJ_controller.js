@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraJController', function ($scope) {
 
-    $scope.imagemLetra = 'jj.png';
-    $scope.imagemPalavra = 'janela.png';
+    $scope.imagemLetra = 'jj';
+    $scope.imagemPalavra = 'janela';
     $scope.palavra = 'JANELA';
     $scope.letras = [];
     $scope.titulo = 'Letra J';
@@ -42,12 +42,13 @@ app.controller('LetraJController', function ($scope) {
         } else if (letra === 6) {
             if ($scope.letras[5] != 'A' && $scope.letras[5] != 'a') {
                 $scope.letras[5] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/k";
             }
         }
     };
 
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/k";
+    };
     // Garante o foco na primeira letra
     angular.element(document).ready(function () {
         document.getElementById('letra1').focus();

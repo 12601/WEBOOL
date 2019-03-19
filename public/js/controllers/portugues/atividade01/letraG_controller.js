@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraGController', function ($scope) {
 
-    $scope.imagemLetra = 'gg.png';
-    $scope.imagemPalavra = 'girafa.png';
+    $scope.imagemLetra = 'gg';
+    $scope.imagemPalavra = 'girafa';
     $scope.palavra = 'GIRAFA';
     $scope.letras = [];
     $scope.titulo = 'Letra F';
@@ -42,12 +42,13 @@ app.controller('LetraGController', function ($scope) {
         } else if (letra === 6) {
             if ($scope.letras[5] != 'A' && $scope.letras[5] != 'a') {
                 $scope.letras[5] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/h";
             }
         }
     };
 
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/h";
+    };
     // Garante o foco na primeira letra
     angular.element(document).ready(function () {
         document.getElementById('letra1').focus();

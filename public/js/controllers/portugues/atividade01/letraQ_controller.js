@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraQController', function ($scope) {
 
-    $scope.imagemLetra = 'qq.png';
-    $scope.imagemPalavra = 'queijo.png';
+    $scope.imagemLetra = 'qq';
+    $scope.imagemPalavra = 'queijo';
     $scope.palavra = 'QUEIJO';
     $scope.letras = [];
     $scope.titulo = 'Letra Q';
@@ -42,12 +42,13 @@ app.controller('LetraQController', function ($scope) {
         } else if (letra === 6) {
             if ($scope.letras[5] != 'O' && $scope.letras[5] != 'o') {
                 $scope.letras[5] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/r";
             }
         }
     };
 
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/r";
+    };
     // Garante o foco na primeira letra
     angular.element(document).ready(function () {
         document.getElementById('letra1').focus();

@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraXController', function ($scope) {
 
-    $scope.imagemLetra = 'xx.png';
-    $scope.imagemPalavra = 'xicara.png';
+    $scope.imagemLetra = 'xx';
+    $scope.imagemPalavra = 'xicara';
     $scope.palavra = 'XÍCARA';
     $scope.letras = [];
     $scope.titulo = 'Letra X';
@@ -42,10 +42,12 @@ app.controller('LetraXController', function ($scope) {
         } else if (letra === 6) {
             if ($scope.letras[5] != 'A' && $scope.letras[5] != 'a') {
                 $scope.letras[5] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/z";
             }
         }
+    };
+
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/z";
     };
 
     // Garante o foco na primeira letra

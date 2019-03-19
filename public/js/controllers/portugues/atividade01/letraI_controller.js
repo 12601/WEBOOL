@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraIController', function ($scope) {
 
-    $scope.imagemLetra = 'ii.png';
-    $scope.imagemPalavra = 'igreja.png';
+    $scope.imagemLetra = 'ii';
+    $scope.imagemPalavra = 'igreja';
     $scope.palavra = 'IGREJA';
     $scope.letras = [];
     $scope.titulo = 'Letra I';
@@ -42,12 +42,13 @@ app.controller('LetraIController', function ($scope) {
         } else if (letra === 6) {
             if ($scope.letras[5] != 'A' && $scope.letras[5] != 'a') {
                 $scope.letras[5] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/j";
             }
         }
     };
 
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/j";
+    };
     // Garante o foco na primeira letra
     angular.element(document).ready(function () {
         document.getElementById('letra1').focus();

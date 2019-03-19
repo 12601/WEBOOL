@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraUController', function ($scope) {
 
-    $scope.imagemLetra = 'uu.png';
-    $scope.imagemPalavra = 'urso.png';
+    $scope.imagemLetra = 'uu';
+    $scope.imagemPalavra = 'urso';
     $scope.palavra = 'URSO';
     $scope.letras = [];
     $scope.titulo = 'Letra U';
@@ -30,10 +30,12 @@ app.controller('LetraUController', function ($scope) {
         } else if (letra === 4) {
             if ($scope.letras[3] != 'o' && $scope.letras[3] != 'O') {
                 $scope.letras[3] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/v";
             }
         }
+    };
+
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/v";
     };
 
     // Garante o foco na primeira letra

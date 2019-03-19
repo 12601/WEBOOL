@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraRController', function ($scope) {
 
-    $scope.imagemLetra = 'rr.png';
-    $scope.imagemPalavra = 'regua.png';
+    $scope.imagemLetra = 'rr';
+    $scope.imagemPalavra = 'regua';
     $scope.palavra = 'RÉGUA';
     $scope.letras = [];
     $scope.titulo = 'Letra R';
@@ -36,10 +36,12 @@ app.controller('LetraRController', function ($scope) {
         } else if (letra === 5) {
             if ($scope.letras[4] != 'A' && $scope.letras[4] != 'a') {
                 $scope.letras[4] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/s";
             }
         }
+    };
+
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/s";
     };
 
     // Garante o foco na primeira letra

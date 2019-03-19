@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraKController', function ($scope) {
 
-    $scope.imagemLetra = 'Kk.png';
-    $scope.imagemPalavra = 'kiwi.png';
+    $scope.imagemLetra = 'Kk';
+    $scope.imagemPalavra = 'kiwi';
     $scope.palavra = 'KIWI';
     $scope.letras = [];
     $scope.titulo = 'Letra K';
@@ -30,12 +30,13 @@ app.controller('LetraKController', function ($scope) {
         } else if (letra === 4) {
             if ($scope.letras[3] != 'I' && $scope.letras[3] != 'i') {
                 $scope.letras[3] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/l";
             }
         }
     };
 
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/l";
+    };
     // Garante o foco na primeira letra
     angular.element(document).ready(function () {
         document.getElementById('letra1').focus();

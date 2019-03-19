@@ -1,8 +1,8 @@
 var app = angular.module('webool');
 app.controller('LetraZController', function ($scope) {
 
-    $scope.imagemLetra = 'zz.png';
-    $scope.imagemPalavra = 'zebra.png';
+    $scope.imagemLetra = 'zz';
+    $scope.imagemPalavra = 'zebra';
     $scope.palavra = 'ZEBRA';
     $scope.letras = [];
     $scope.titulo = 'Letra Z';
@@ -36,12 +36,13 @@ app.controller('LetraZController', function ($scope) {
         } else if (letra === 5) {
             if ($scope.letras[4] != 'a' && $scope.letras[4] != 'A') {
                 $scope.letras[4] = '';
-            } else {
-                location.href = "#!/portugues/atividade01";
             }
         }
     };
 
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01";
+    };
     // Garante o foco na primeira letra
     angular.element(document).ready(function () {
         document.getElementById('letra1').focus();

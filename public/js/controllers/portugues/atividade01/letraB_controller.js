@@ -1,7 +1,7 @@
 var app = angular.module('webool');
 app.controller('LetraBController', function ($scope) {
     $scope.imagemLetra = 'bb';
-    $scope.imagemPalavra = 'banana.png';
+    $scope.imagemPalavra = 'banana';
     $scope.palavra = 'BANANA';
     $scope.letras = [];
     $scope.titulo = 'Letra B';
@@ -42,10 +42,12 @@ app.controller('LetraBController', function ($scope) {
         } else if (letra === 6) {
             if ($scope.letras[5] != 'A' && $scope.letras[5] != 'a') {
                 $scope.letras[5] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/c";
             }
         }
+    };
+
+    $scope.irParaProximaPagina = function(){
+        location.href = "#!/portugues/atividade01/c";
     };
 
     // Garante o foco na primeira letra
