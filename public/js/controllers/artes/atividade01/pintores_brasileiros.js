@@ -1,5 +1,5 @@
 var app = angular.module('webool');
-app.controller('JogoMemoriaController', function($scope){
+app.controller('PintoresBrasileirosController', function($scope){
 	function ScoreBoardGameControl (){
 		var score = 0;
 		var POINT_GAME = 10;

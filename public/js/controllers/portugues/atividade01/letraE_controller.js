@@ -42,8 +42,6 @@ app.controller('LetraEController', function ($scope) {
         } else if (letra === 6) {
             if ($scope.letras[5] != 'A' && $scope.letras[5] != 'a') {
                 $scope.letras[5] = '';
-            } else {
-                location.href = "#!/portugues/atividade01/f";
             }
         }
     };

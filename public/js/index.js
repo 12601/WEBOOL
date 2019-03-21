@@ -12,10 +12,6 @@ app.config(function ($routeProvider) {
         templateUrl: 'partials/contato.html'
     });
 
-    $routeProvider.when('/portugues', {
-        templateUrl: 'partials/portugues/inicio.html'
-    });
-
     // Artes
 
     $routeProvider.when('/artes', {
@@ -23,9 +19,19 @@ app.config(function ($routeProvider) {
     });
 
     $routeProvider.when('/artes/atividade01', {
-        templateUrl: 'partials/artes/atividade01/game.html',
-        controller: 'JogoMemoriaController'
+        templateUrl: 'partials/artes/atividade01/inicio.html',
     });
+
+    $routeProvider.when('/artes/atividade01/pintor', {
+        templateUrl: 'partials/artes/atividade01/pintores_brasileiros.html',
+        controller: 'PintoresBrasileirosController'
+    });
+
+    $routeProvider.when('/artes/atividade01/rupestre', {
+        templateUrl: 'partials/artes/atividade01/arte_rupestre.html',
+        controller: 'ArteRupestreController'
+    });
+
 
 
     // História
@@ -53,6 +59,9 @@ app.config(function ($routeProvider) {
     
     // Português
 
+    $routeProvider.when('/portugues', {
+        templateUrl: 'partials/portugues/inicio.html'
+    });
     
     $routeProvider.when('/portugues/atividade01', {
         templateUrl: 'partials/portugues/atividade01/inicio.html'
