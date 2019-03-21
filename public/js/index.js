@@ -19,12 +19,14 @@ app.config(function ($routeProvider) {
     // Artes
 
     $routeProvider.when('/artes', {
-        templateUrl: 'partials/artes/inicio.html'
+        templateUrl: 'partials/artes/inicio.html',
     });
 
-    $routeProvider.when('/historia/atividade01', {
-        templateUrl: 'partials/artes/atividade01/artistas.html'
+    $routeProvider.when('/artes/atividade01', {
+        templateUrl: 'partials/artes/atividade01/game.html',
+        controller: 'JogoMemoriaController'
     });
+
 
     // História
 
