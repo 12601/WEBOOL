@@ -32,8 +32,11 @@ app.config(function ($routeProvider) {
         controller: 'ArteRupestreController'
     });
 
-
-
+    $routeProvider.when('/artes/atividade01/gotico', {
+        templateUrl: 'partials/artes/atividade01/arte_gotica.html',
+        controller: 'ArteGoticaController'
+    });
+    
     // História
 
     $routeProvider.when('/historia', {
