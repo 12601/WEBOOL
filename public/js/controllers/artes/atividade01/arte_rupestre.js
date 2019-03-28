@@ -187,7 +187,9 @@ app.controller('ArteRupestreController', function($scope){
 			return cards;
 		}
 	}
+	function GameControl (){
 
+	}
 	var builderCardGame =  new BuilderCardGame();
 	cardGame = builderCardGame.doCardGame();
 	cardGame.show();
