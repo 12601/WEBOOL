@@ -153,9 +153,9 @@ app.controller('ArteGoticaController', function($scope){
 	
 	function BuilderCardGame(){
 		var pictures = new Array (
-			'01.png','01.png',
-			'02.png','02.png',
-			'03.png','03.png');
+			'001.png','001.png',
+			'002.png','002.png',
+			'003.png','003.png');
 	
 		this.doCardGame =  function (){
 			shufflePictures();
