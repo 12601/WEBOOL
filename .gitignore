@@ -1,1 +1,4 @@
 /public/vendors
+node_modules
+/dist
+/.tmp
