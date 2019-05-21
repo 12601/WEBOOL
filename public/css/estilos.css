@@ -4,6 +4,11 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+footer{
+    background-color: #81CFE0;
+    color: #FFFF
+}
+
 .barraNavegacao {
     background-color: #81CFE0;
     font-size: 120%;
