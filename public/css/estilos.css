@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@font-face {
+    font-family: "Quicksand";
+    src: url(../fonts/Quicksand-Regular.ttf);
+}
 body {
-    background-color: #ECECEC;
-    font-family: 'Quicksand', sans-serif;
+    background-color: #ECECEC !important;
+    font-family: "Quicksand" !important;
 }
 
 footer{
