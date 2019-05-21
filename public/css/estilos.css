@@ -1,92 +1,169 @@
 @font-face {
-    font-family: "Quicksand";
+    font-family: 'nexa light';
+    src: url(../fonts/Nexa-Light.otf);
+}
+
+@font-face {
+    font-family: 'nexa bold';
+    src: url(../fonts/Nexa-Bold.otf);
+}
+
+@font-face {
+    font-family: 'quicksand';
     src: url(../fonts/Quicksand-Regular.ttf);
 }
+
+:root {
+    --fonte-principal: 'nexa light';
+    --fonte-secundaria: 'nexa bold';
+    --cor-principal: #81cfe0;
+    --cor-hover: #c5eff7;
+    --cor-secundaria: #24252a;
+}
+
 body {
-    background-color: #ECECEC !important;
-    font-family: "Quicksand" !important;
+    margin: 0px;
+    font-family: var(--fonte-principal);
 }
 
-footer{
-    background-color: #81CFE0;
-    color: #FFFF
+/* Cabeçalho */
+
+.cabecalho {
+    background-color: var(--cor-principal);
+    padding: 10px 20px;
 }
 
-.barraNavegacao {
-    background-color: #81CFE0;
-    font-size: 120%;
+.cabecalho a {
+    text-decoration: none;
+    color: white;
 }
 
-.barraNavegacao a {
-    color: white !important;
+.cabecalho * {
+    display: inline;
+    vertical-align: middle;
 }
 
-.itemMenu {
-    display: block;
-}
-
-.itemMenu img {
-    width: 200px;
-}
-
-.logo {
+.cabecalho .logo img {
     width: 100px;
 }
 
-#collapsibleNavbar {
-    text-align: right;
+.menu ul {
+    list-style-type: none;
 }
 
-.breadcrumbWebool {
-    background-color: #ECECEC;
+.menu li {
+    display: inline;
+    font-size: 120%;
+    margin-right: 10px;
 }
 
-.breadcrumbWebool li a {
-    color: #67809F !important;
+.menu a:hover {
+    color: var(--cor-hover);
+}
+
+
+/* Contêiner */
+.conteiner {
+    padding: 20px;
+}
+
+/* Rodapé */
+
+.rodape {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 20px 20px 40px 20px;
+    font-size: 90%;
+}
+
+.rodape .areaBlocos {
+    display: table;
+    width: 100%;
+}
+
+.rodape .bloco {
+    display: table-cell;
+    width: 33%;
+    padding: 10px;
+}
+
+.rodape .bloco .logo {
+    font-weight: bold;
+}
+
+.rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: var(--cor-hover);
+}
+
+.rodape .titulo, .rodape .tituloAlt {
+    font-weight: bold;
+}
+
+.rodape .titulo {
+    text-decoration: none;
+}
+
+.rodape .titulo:hover {
+    color: var(--cor-hover);
+}
+
+.rodape .contato {
+    margin-top: 10px;
+}
+
+.rodape .blocoContato img {
+    width: 24px;
+    -webkit-filter: brightness(0) invert(1);
+}
+
+.rodape .blocoContato:hover img  {
+    -webkit-filter: brightness(1) invert(0);
+}
+
+.rodape .blocoContato:hover a  {
+    color: var(--cor-hover);
+}
+
+.rodape .realizacao img {
+    padding-right: 10px;
+}
+
+.rodape .realizacao #nudes {
+    width: 100px;
+}
+
+.rodape .realizacao #ifms {
+    width: 220px;
+}
+
+/* Página inicial */
+
+.propaganda {
+    padding: 40px;
+    transition: 1s;
+    margin: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #eeeeee, -2px -2px 20px #eeeeee;
+    text-align: center;
+}
+
+.propaganda p {
+    font-size: 110%;
+}
+
+.propaganda a {
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
-.letra {
-    width: 60px;
-    height: 60px;
-    text-align: center
+.propaganda a:hover {
+    color: var(--cor-hover);
 }
-
-.grupoLetras {
-    display: inline;
-}
-
-.figuraSoletrando {
-    height:300px;
-}
-
-.imagemContato {
-    width: 500px;
-}
-
-.areaRA{
-    width: 90%; /*80% largura*/
-    height: 600px; /*400px altura*/
-}
-
-.imagemLetra{
-    width: 150px;
-}
-
-#game img{
-    margin: 5px;
-    
-}
-
-@media only screen and(max-width: 768px) {
-    .letra .grupoLetra {
-        display: block;
-    }
-    .figuraSoletrando {
-        width: 200px;
-    }
-}
-
-/*artes jogo da memoria*/
 
