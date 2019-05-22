@@ -1,43 +1,49 @@
-<ol class="breadcrumb breadcrumbWebool">
-    <li class="breadcrumb-item">
+<ol class="breadcrumb">
+    <li>
         <a href="#!/">Início</a>
     </li>
-    <li class="breadcrumb-item">
+    <li>
+        <a href="#!/portugues">Atividades</a>
+    </li>
+    <li>
         <a href="#!/portugues">Português</a>
     </li>
-    <li class="breadcrumb-item">
+    <li>
         <a href="#!/portugues/atividade01">Soletrando</a>
     </li>
-    <li class="breadcrumb-item">
-        <a href="#!/portugues/atividade01/a">{{ titulo }}</a>
+    <li>
+        <a href="#!/portugues/atividade01/{{letra}}">{{ titulo }}</a>
     </li>
 </ol>
 
-<div class="fundo">
-    <div class="row">
-        <div class="col-sm-8 text-center">
-            <img src="img/portugues/{{ imagemLetra }}.png" class="imagemLetra" title="aa">
-            <h1> {{ palavra }} </h1>
-            <br>
-            <div class="grupoLetras" ng-repeat="n in indices">
-                <input class="letra" type="text" style="font-family: Tahoma; font-size: 30px" ng-model="letras[n]" id="letra{{ n + 1}}" ng-keyup="verificarLetra(n + 1)">
+<div class="bloco">
+    <div class="quadro">
+        <div class="linhaCartoes">
+            <div class="cartaoSoletrando">
+                <img src="img/portugues/{{ imagemLetra }}.png" class="imagemLetra" title="aa">
+                <h1> {{ palavra }} </h1>
+
+                <div class="campoSoletrando" ng-repeat="n in indices">
+                    <input type="text" style="font-family: Tahoma; font-size: 30px" ng-model="letras[n]"
+                        id="letra{{ n + 1}}" ng-keyup="verificarLetra(n + 1)">
+                </div>
+
+                <audio class="audioAtividade" controls>
+                    <source src="audio/portugues/{{ imagemLetra }}.mp3" type="audio/mpeg">
+                </audio>
             </div>
-            <br><br>
-            <audio controls>
-                <source src="audio/portugues/{{ imagemLetra }}.mp3" type="audio/mpeg">
-            </audio>
-            <br><br>
-            <audio controls>
-                <source src="audio/portugues/{{ imagemPalavra }}.mp3" type="audio/mpeg">
-            </audio>
+            <div class="cartaoSoletrando">
+                <img class="imagemObjeto" src="img/portugues/{{ imagemPalavra }}.png">
+                <audio class="audioAtividade" controls>
+                    <source src="audio/portugues/{{ imagemPalavra }}.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         </div>
-
-        <div class="col-sm-4 text-center">
-            <img class="figuraSoletrando" src="img/portugues/{{ imagemPalavra }}.png">
-            <br><br><br>
-            <button class="btn btn-primary" ng-click="irParaProximaPagina()">Próximo</button>
-        </div>
+        <button class="botaoProximo" ng-click="irParaProximaPagina()">Próximo</button>
     </div>
-</div>
 
-<br>
+
+
+
+
+</div>

@@ -5,6 +5,7 @@ app.controller('LetraSController', function ($scope) {
     $scope.palavra = 'SORVETE';
     $scope.letras = [];
     $scope.titulo = 'Letra S';
+    $scope.letra = 's';
     $scope.indices = Array.from(Array($scope.palavra.length).keys());
 
     $scope.verificarLetra = function (letra) {
@@ -51,7 +52,7 @@ app.controller('LetraSController', function ($scope) {
         }
     };
 
-    $scope.irParaProximaPagina = function(){
+    $scope.irParaProximaPagina = function () {
         location.href = "#!/portugues/atividade01/t";
     };
 

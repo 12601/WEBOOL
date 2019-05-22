@@ -1,42 +1,30 @@
-<ol class="breadcrumb breadcrumbWebool">
-    <li class="breadcrumb-item">
+<ol class="breadcrumb">
+    <li>
         <a href="#!/">Início</a>
     </li>
-    <li class="breadcrumb-item">
+    <li>
+        <a href="#!/atividades">Atividades</a>
+    </li>
+    <li>
         <a href="#!/matematica">Matemática</a>
     </li>
-    <li class="breadcrumb-item">
+    <li>
         <a href="#!/matematica/atividade01">Formas geométricas</a>
     </li>
-    <li class="breadcrumb-item">
+    <li>
         <a href="#!/matematica/atividade01/{{formaGeometrica}}">{{ titulo }}</a>
     </li>
 </ol>
 
-<div class="row text-center">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <img src="img/matematica/{{ formaGeometrica }}.png" title="{{ titulo }}">
-        <h1> {{ titulo }} </h1>
-    </div>
-    <div class="col-md-4"></div>
-</div>
-<div class="row text-center">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <audio controls>
-            <source src="audio/matematica/{{ formaGeometrica }}.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-    <div class="col-md-4"></div>
-</div>
-<br>
-<div class="row text-center">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <a href="{{ proximo }}" class="btn btn-primary">Próxima figura</a>
-    </div>
-    <div class="col-md-4"></div>
+<div class="bloco">
+    <img src="img/matematica/{{ formaGeometrica }}.png" title="{{ titulo }}">
+    <h1> {{ titulo }} </h1>
+    <audio class="audioAtividade" controls>
+        <source src="audio/matematica/{{ formaGeometrica }}.mp3" type="audio/mpeg">
+    </audio>
+    <a href="{{ proximo }}">
+        <button class="botaoProximo">Próxima figura</button>
+    </a>
 </div>
 
 <br>

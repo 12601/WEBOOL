@@ -6,6 +6,7 @@ app.controller('LetraDController', function ($scope) {
     $scope.palavra = 'DOMINÓ';
     $scope.letras = [];
     $scope.titulo = 'Letra D';
+    $scope.letra = 'd';
 
     $scope.indices = Array.from(Array($scope.palavra.length).keys());
 
@@ -47,7 +48,7 @@ app.controller('LetraDController', function ($scope) {
         }
     };
 
-    $scope.irParaProximaPagina = function(){
+    $scope.irParaProximaPagina = function () {
         location.href = "#!/portugues/atividade01/e";
     };
     // Garante o foco na primeira letra

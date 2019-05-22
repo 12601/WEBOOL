@@ -8,8 +8,8 @@ app.config(function ($routeProvider) {
         templateUrl: 'partials/sobre.html'
     });
 
-    $routeProvider.when('/contato', {
-        templateUrl: 'partials/contato.html'
+    $routeProvider.when('/atividades', {
+        templateUrl: 'partials/atividades.html'
     });
 
     // Artes
@@ -36,7 +36,7 @@ app.config(function ($routeProvider) {
         templateUrl: 'partials/artes/atividade01/arte_gotica.html',
         controller: 'ArteGoticaController'
     });
-    
+
     // História
 
     $routeProvider.when('/historia', {
@@ -59,13 +59,13 @@ app.config(function ($routeProvider) {
         templateUrl: 'partials/historia/atividade01/india.html'
     });
 
-    
+
     // Português
 
     $routeProvider.when('/portugues', {
         templateUrl: 'partials/portugues/inicio.html'
     });
-    
+
     $routeProvider.when('/portugues/atividade01', {
         templateUrl: 'partials/portugues/atividade01/inicio.html'
     });
@@ -201,7 +201,7 @@ app.config(function ($routeProvider) {
 
 
     // Matemática
-    
+
     $routeProvider.when('/matematica', {
         templateUrl: 'partials/matematica/inicio.html'
     });

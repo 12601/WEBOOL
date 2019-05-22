@@ -5,7 +5,8 @@ app.controller('LetraGController', function ($scope) {
     $scope.imagemPalavra = 'girafa';
     $scope.palavra = 'GIRAFA';
     $scope.letras = [];
-    $scope.titulo = 'Letra F';
+    $scope.titulo = 'Letra G';
+    $scope.letra = 'g';
     $scope.indices = Array.from(Array($scope.palavra.length).keys());
 
     $scope.verificarLetra = function (letra) {
@@ -46,7 +47,7 @@ app.controller('LetraGController', function ($scope) {
         }
     };
 
-    $scope.irParaProximaPagina = function(){
+    $scope.irParaProximaPagina = function () {
         location.href = "#!/portugues/atividade01/h";
     };
     // Garante o foco na primeira letra

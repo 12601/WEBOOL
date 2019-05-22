@@ -1,3 +1,5 @@
+/* Setup */
+
 @font-face {
     font-family: 'nexa light';
     src: url(../fonts/Nexa-Light.otf);
@@ -35,7 +37,6 @@ body {
 
 .cabecalho a {
     text-decoration: none;
-    color: white;
 }
 
 .cabecalho * {
@@ -47,24 +48,198 @@ body {
     width: 100px;
 }
 
-.menu ul {
+.menu {
     list-style-type: none;
 }
 
 .menu li {
     display: inline;
     font-size: 120%;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .menu a:hover {
     color: var(--cor-hover);
 }
 
+.menuResponsivo {
+    display: none;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb {
+    list-style: none;
+}
+
+.breadcrumb li, .breadcrumb a {
+    color: #2574a9;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-size: 90%;
+}
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--cor-hover);
+}
 
 /* Contêiner */
+
 .conteiner {
     padding: 20px;
+}
+
+/* Página inicial */
+
+.sobre p {
+    line-height: 30px;
+}
+
+.bloco {
+    background-color: white;
+    padding: 40px;
+    margin: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #eeeeee, -2px -2px 20px #eeeeee;
+    text-align: center;
+}
+
+.bloco h1 {
+    margin-bottom: 50px;
+}
+
+.bloco p {
+    font-size: 120%;
+}
+
+.bloco a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bloco a:hover {
+    color: var(--cor-hover);
+}
+
+.bloco .video {
+    width: 70%;
+}
+
+.bloco .time {
+    display: table;
+    width: 100%;
+}
+
+.bloco .membro {
+    display: table-cell;
+    width: 25%;
+}
+
+.bloco .membro img {
+    border-radius: 50%;
+    width: 200px;
+    padding: 0px 2px;
+}
+
+.bloco .membro .icone {
+    border-radius: 0%;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.bloco .nome {
+    font-weight: bold;
+    font-size: 130%;
+}
+
+/* Atividades */
+
+.quadro {
+    padding: 10px;
+    margin: auto;
+}
+
+.linhaCartoes {
+    display: table;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.linhaCartoes:last-child {
+    margin-bottom: 0px;
+}
+
+.cartao, .cartaoSexto, .cartaoSoletrando {
+    display: table-cell;
+    text-align: center;
+}
+
+.cartao img {
+    width: 128px;
+}
+
+.cartaoSexto {
+    width: calc(100% / 6);
+}
+
+.cartaoSexto img {
+    width: 48px;
+}
+
+.cartaoSoletrando {
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.cartaoSoletrando * {
+    vertical-align: top;
+}
+
+.campoSoletrando {
+    display: inline;
+}
+
+.campoSoletrando input[type=text] {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #aaaaaa;
+}
+
+.imagemLetra {
+    width: 40%;
+}
+
+.imagemObjeto {
+    height: 300px;
+}
+
+.audioAtividade {
+    display: block;
+    margin: 30px auto auto auto;
+    width: 300px;
+}
+
+.botaoProximo {
+    background-color: var(--cor-principal);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: var(--fonte-principal);
+    font-size: 120%;
+    border: none;
+    margin-top: 30px;
 }
 
 /* Rodapé */
@@ -76,18 +251,18 @@ body {
     font-size: 90%;
 }
 
-.rodape .areaBlocos {
+.rodape .areaSecoes {
     display: table;
     width: 100%;
 }
 
-.rodape .bloco {
+.rodape .secao {
     display: table-cell;
     width: 33%;
     padding: 10px;
 }
 
-.rodape .bloco .logo {
+.rodape .secao .logo {
     font-weight: bold;
 }
 
@@ -121,11 +296,11 @@ body {
     -webkit-filter: brightness(0) invert(1);
 }
 
-.rodape .blocoContato:hover img  {
+.rodape .blocoContato:hover img {
     -webkit-filter: brightness(1) invert(0);
 }
 
-.rodape .blocoContato:hover a  {
+.rodape .blocoContato:hover a {
     color: var(--cor-hover);
 }
 
@@ -141,29 +316,97 @@ body {
     width: 220px;
 }
 
-/* Página inicial */
+/* Mobile */
 
-.propaganda {
-    padding: 40px;
-    transition: 1s;
-    margin: 30px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px #eeeeee, -2px -2px 20px #eeeeee;
-    text-align: center;
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .menuResponsivo {
+        display: inline;
+    }
+    .menuResponsivo ul {
+        float: right;
+        margin: 0px;
+        margin-top: 7px;
+    }
+    .menuResponsivo li {
+        margin-right: 20px;
+    }
+    .menuResponsivo li:last-child {
+        margin-right: 0px;
+    }
+    .menuResponsivo img {
+        width: 24px;
+    }
+    .conteiner {
+        padding: 15px;
+    }
+    .bloco {
+        margin: 0px 0px 20px 0px;
+        padding: 10px;
+    }
+    .bloco h1 {
+        margin-bottom: 20px;
+    }
+    .bloco:last-child {
+        margin-bottom: 0px;
+    }
+    .bloco iframe {
+        width: 280 !important;
+        height: 155 !important;
+    }
+    .bloco h1 {
+        font-size: 140%;
+    }
+    .bloco .time, .bloco .membro {
+        display: block;
+    }
+    .bloco .video {
+        width: 100%;
+    }
+    .bloco .membro {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .bloco .membro p {
+        margin: 5px;
+    }
+    .quadro {
+        padding: 0px;
+    }
+    .linhaCartoes, .cartao, .cartaoSexto, .cartaoSoletrando {
+        display: block;
+    }
+    .cartao, .cartaoSexto, .cartaoSoletrando {
+        margin-bottom: 50px;
+    }
+    .cartao:last-child, .cartaoSexto:last-child, .cartaoSoletrando:last-child {
+        margin-bottom: 0px;
+    }
+    .cartaoSexto, .cartaoSoletrando {
+        width: 100%;
+        padding: 0px;
+    }
+    .campoSoletrando input[type=text] {
+        width: 30px;
+        height: 30px;
+    }
+    .imagemObjeto {
+        height: auto;
+        width: 50%;
+    }
+    .rodape {
+        text-align: center;
+    }
+    .rodape .logo a, .rodape .titulo, .rodape .tituloAlt {
+        font-size: 140%;
+    }
+    .rodape .areaSecoes, .rodape .secao {
+        display: block;
+    }
+    .rodape .secao {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
-
-.propaganda p {
-    font-size: 110%;
-}
-
-.propaganda a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.propaganda a:hover {
-    color: var(--cor-hover);
-}
-

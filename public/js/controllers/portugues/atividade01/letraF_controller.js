@@ -6,6 +6,7 @@ app.controller('LetraFController', function ($scope) {
     $scope.palavra = 'FLAUTA';
     $scope.letras = [];
     $scope.titulo = 'Letra F';
+    $scope.letra = 'f';
     $scope.indices = Array.from(Array($scope.palavra.length).keys());
 
     $scope.verificarLetra = function (letra) {
@@ -46,7 +47,7 @@ app.controller('LetraFController', function ($scope) {
         }
     };
 
-    $scope.irParaProximaPagina = function(){
+    $scope.irParaProximaPagina = function () {
         location.href = "#!/portugues/atividade01/g";
     };
     // Garante o foco na primeira letra
