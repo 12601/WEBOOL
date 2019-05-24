@@ -1,24 +1,25 @@
-<ol class="breadcrumb breadcrumbWebool">
-    <li class="breadcrumb-item">
+<ol class="breadcrumb">
+    <li>
         <a href="#!/">Início</a>
     </li>
-    <li class="breadcrumb-item">
+    <li>
+        <a href="#!/atividades">Atividades</a>
+    </li>
+    <li>
         <a href="#!/artes">Artes</a>
     </li>
-    <li class="breadcrumb-item">
+    <li>
         <a href="#!/artes/atividade01">Jogo da Memória</a>
     </li>
-    <li class="breadcrumb-item">
+    <li>
         <a href="#!/artes/atividade01/pintor">Artistas Brasileiros</a>
     </li>
 </ol>
 
-<div class="row">
-    <div class="col text-center">
-        <div id="game">
-        </div>
+<div class="bloco">
+    <div id="game">
     </div>
-    <div id="control">
-		<input type="button"  class="btn btn-primary" value="Reiniciar" onclick="GameControl.createGame()"/> 
-	</div>
+    <button class="botaoProximo" onclick="GameControl.createGame()">
+        Reiniciar
+    </button>
 </div>

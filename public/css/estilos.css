@@ -182,13 +182,17 @@ body {
     margin-bottom: 0px;
 }
 
-.cartao, .cartaoSexto, .cartaoSoletrando {
+.cartao, .cartaoSexto, .cartaoTerco, .cartaoSoletrando {
     display: table-cell;
     text-align: center;
 }
 
 .cartao img {
     width: 128px;
+}
+
+.cartaoTerco {
+    width: calc(100% /3);
 }
 
 .cartaoSexto {
@@ -240,6 +244,11 @@ body {
     font-size: 120%;
     border: none;
     margin-top: 30px;
+}
+
+.areaRA {
+    width: 90%;
+    height: 400px;
 }
 
 /* Rodapé */
@@ -375,16 +384,16 @@ body {
     .quadro {
         padding: 0px;
     }
-    .linhaCartoes, .cartao, .cartaoSexto, .cartaoSoletrando {
+    .linhaCartoes, .cartao, .cartaoSexto, .cartaoTerco, .cartaoSoletrando {
         display: block;
     }
-    .cartao, .cartaoSexto, .cartaoSoletrando {
+    .cartao, .cartaoSexto, .cartaoSoletrando, .cartaoTerco {
         margin-bottom: 50px;
     }
-    .cartao:last-child, .cartaoSexto:last-child, .cartaoSoletrando:last-child {
+    .cartao:last-child, .cartaoTerco:last-child, .cartaoSexto:last-child, .cartaoSoletrando:last-child {
         margin-bottom: 0px;
     }
-    .cartaoSexto, .cartaoSoletrando {
+    .cartaoSexto, .cartaoTerco, .cartaoSoletrando {
         width: 100%;
         padding: 0px;
     }
