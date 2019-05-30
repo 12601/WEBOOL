@@ -16,10 +16,14 @@
     </li>
 </ol>
 
-<div class="bloco">
-    <div id="game">
-    </div>
-    <button class="botaoProximo" onclick="GameControl.createGame()">
-        Reiniciar
-    </button>
-</div>
+<div onload="GameControl.createGame()">
+	<div  id="main" class="main">
+
+	<div id="control">
+		<input type="botaoProximo"  class="botaoProximo" value="Reiniciar" onclick="GameControl.createGame()"/> 
+	</div>
+	<div id="score">
+	</div>
+	<div id="game">
+	</div>
+</div></div>
